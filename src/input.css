@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Titan+One&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply font-bodyFont bg-bodyColor tracking-wider;
+  }
+  section {
+    @apply pt-16 pb-4 md:pt-4;
+  }
+}

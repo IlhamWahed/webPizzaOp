@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Titan+One&display=swap");
+
 /*
 ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
@@ -434,7 +436,29 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  --tw-bg-opacity: 1;
+  background-color: hsl(36 52% 87% / var(--tw-bg-opacity));
+  font-family: Poppins, sans-serif;
+  letter-spacing: 0.05em;
+}
+
+section{
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px){
+  section{
+    padding-top: 1rem;
+  }
+}
+
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -484,7 +508,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -534,19 +558,71 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-center {
+.container{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 480px){
+  .container{
+    max-width: 480px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+
+.bg-yellow-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 224 71 / var(--tw-bg-opacity));
+}
+
+.text-center{
   text-align: center;
 }
 
-.text-3xl {
+.font-subtitleFont{
+  font-family: Dancing Script, cursive;
+}
+
+.text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-.font-bold {
+.font-bold{
   font-weight: 700;
 }
 
-.underline {
+.text-primaryColor{
+  --tw-text-opacity: 1;
+  color: hsl(359 100% 35% / var(--tw-text-opacity));
+}
+
+.underline{
   text-decoration-line: underline;
 }
