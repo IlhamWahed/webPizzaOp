@@ -22,7 +22,62 @@
   </head>
   <body>
     <!--Header-->
-    <header></header>
+    <header class="w-full fixed top-0 left-0 z-50" id="header">
+      <nav class="container h-14 relative flex items-center justify-between bg-bodyColor">
+        <!--logo-->
+        <a href="#" class="flex gap-2 font-titleFont text-primaryColor text-base md:text-xl tracking-tighter">
+          <img src="../img/logo.png" class="w-[25px] h-auto overflow-clip" alt="" />
+          PizzaHut
+        </a>
+
+        <!--title ul li-->
+        <div class="hidden absolute top-0 left-0 w-full py-14 md:block md:py-0 md:w-auto md:static" id="nav-menu">
+          <ul class="flex gap-5 flex-col text-center font-medium md:flex-row">
+            <li><a href="#home" class="hover:text-primaryColorAlt ease-in duration-200 nav-link">Home</a></li>
+            <li><a href="#about" class="hover:text-primaryColorAlt ease-in duration-200 nav-link">About Us</a></li>
+            <li><a href="#popular" class="hover:text-primaryColorAlt ease-in duration-200 nav-link">Popular</a></li>
+            <li><a href="#recently" class="hover:text-primaryColorAlt ease-in duration-200 nav-link">Recently</a></li>
+          </ul>
+          <!--icon close-->
+          <div class="absolute right-4 top-2 font-semibold drop-shadow-md text-2xl md:hidden" id="btn-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <!--toggle btn-->
+        <div class="flex items-center gap-5 text-2xl font-semibold">
+          <i class="ri-moon-line"></i>
+          <div class="md:hidden" id="humberger">
+            <i class="ri-menu-2-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!--Header End-->
+
+    <main>
+      <!--Home-->
+      <section>
+        <div class="container flex flex-col items-center justify-center gap-10 lg:flex-row">
+          <!--image home-->
+          <div class="mx-auto lg:order-2 lg:basis-3/5">
+            <img src="../img/home-pizza.png" class="w-80 lg:w-[600px]" alt="" />
+          </div>
+          <!--title home-->
+          <div class="flex flex-col gap-5 text-center items-center lg:order-1 lg:items-start lg:text-start lg:basis-3/5">
+            <h1 class="heading-title">the <br />ultimate <br />pizza</h1>
+            <p class="paragraf md:px-28 lg:px-4 font-normal">Enjoy mouth-watering, handcrafted pizzas made with locally-sourced ingredients from pizza hut. With easy online ordering and fast delivery options.</p>
+            <a href="#" class="btn btn-primary text-center">
+              order now
+              <i class="fa-solid fa-arrow-right text-xl"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--Home End-->
+    </main>
+
+    <!--Link JS-->
+    <script src="main.js"></script>
   </body>
 </html>

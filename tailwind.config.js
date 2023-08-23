@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      dropShadow: {
+        myShadow: " 6px 6px 0px #9f7060",
+      },
       screens: {
         sm: "480px",
         md: "768px",
@@ -16,6 +19,8 @@ module.exports = {
         textColorLight: "hsl(19, 8%, 55%)",
         bodyColor: "hsl(36, 52%, 87%)",
         containerColor: "hsl(19, 100%, 97%)",
+        headingColor: "hsl(36, 100%, 96%)",
+        strokeColor: "#401c10",
       },
     },
     fontFamily: {
@@ -26,7 +31,7 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        default: "1.5rem",
+        lg: "7rem",
         sm: "1rem",
       },
     },
