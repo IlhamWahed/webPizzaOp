@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pizzaOP</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
 
     <!--link output css-->
     <link href="/dist/output.css" rel="stylesheet" />
@@ -31,7 +33,7 @@
         </a>
 
         <!--title ul li-->
-        <div class="hidden absolute top-0 left-0 w-full py-14 md:block md:py-0 md:w-auto md:static" id="nav-menu">
+        <div class="hidden absolute top-0 left-0 w-full py-14 md:block md:py-0 md:w-auto md:static bg-bodyColor" id="nav-menu">
           <ul class="flex gap-5 flex-col text-center font-medium md:flex-row">
             <li><a href="#home" class="hover:text-primaryColorAlt ease-in duration-200 nav-link">Home</a></li>
             <li><a href="#about" class="hover:text-primaryColorAlt ease-in duration-200 nav-link">About Us</a></li>
@@ -39,13 +41,13 @@
             <li><a href="#recently" class="hover:text-primaryColorAlt ease-in duration-200 nav-link">Recently</a></li>
           </ul>
           <!--icon close-->
-          <div class="absolute right-4 top-2 font-semibold drop-shadow-md text-2xl md:hidden" id="btn-close">
+          <div class="absolute right-4 top-2 font-semibold drop-shadow-md text-2xl md:hidden cursor-pointer" id="btn-close">
             <i class="ri-close-line"></i>
           </div>
         </div>
 
         <!--toggle btn-->
-        <div class="flex items-center gap-5 text-2xl font-semibold">
+        <div class="flex items-center gap-5 text-2xl font-semibold cursor-pointer">
           <i class="ri-moon-line"></i>
           <div class="md:hidden" id="humberger">
             <i class="ri-menu-2-line"></i>
@@ -60,12 +62,14 @@
       <section>
         <div class="container flex flex-col items-center justify-center gap-10 lg:flex-row">
           <!--image home-->
-          <div class="mx-auto lg:order-2 lg:basis-3/5">
+          <div class="mx-auto lg:order-2 lg:basis-3/5 animate-movingY">
             <img src="../img/home-pizza.png" class="w-80 lg:w-[600px]" alt="" />
           </div>
           <!--title home-->
           <div class="flex flex-col gap-5 text-center items-center lg:order-1 lg:items-start lg:text-start lg:basis-3/5">
-            <h1 class="heading-title">the <br />ultimate <br />pizza</h1>
+            <span class="strokeColor">
+              <h1 class="heading-title">the <br />ultimate <br />pizza</h1>
+            </span>
             <p class="paragraf md:px-28 lg:px-4 font-normal">Enjoy mouth-watering, handcrafted pizzas made with locally-sourced ingredients from pizza hut. With easy online ordering and fast delivery options.</p>
             <a href="#" class="btn btn-primary text-center">
               order now

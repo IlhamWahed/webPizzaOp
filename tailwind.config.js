@@ -3,8 +3,13 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      strokeWidth: {
+        strokeWidth: "10px",
+      },
+
       dropShadow: {
         myShadow: " 6px 6px 0px #9f7060",
+        strokeShadow: ["2.2px 2.2px 0 #000", "-2.2px -2.2px 0 #000", " 2.2px -2.2px 0 #000", "-2.2px 2.2px 0 #000", "2.2px 2.2px 0 #000"],
       },
       screens: {
         sm: "480px",
@@ -21,6 +26,14 @@ module.exports = {
         containerColor: "hsl(19, 100%, 97%)",
         headingColor: "hsl(36, 100%, 96%)",
         strokeColor: "#401c10",
+      },
+      keyframes: {
+        move: {
+          "50%": { transform: "translateY(-1rem)" },
+        },
+      },
+      animation: {
+        movingY: "move 2s linear infinite",
       },
     },
     fontFamily: {

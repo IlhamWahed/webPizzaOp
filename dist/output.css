@@ -670,10 +670,6 @@ section{
   display: flex;
 }
 
-.grid{
-  display: grid;
-}
-
 .hidden{
   display: none;
 }
@@ -698,8 +694,18 @@ section{
   width: 100%;
 }
 
-.grid-cols-12{
-  grid-template-columns: repeat(12, minmax(0, 1fr));
+@keyframes move{
+  50%{
+    transform: translateY(-1rem);
+  }
+}
+
+.animate-movingY{
+  animation: move 2s linear infinite;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .flex-col{
@@ -739,26 +745,6 @@ section{
   background-color: hsl(36 52% 87% / var(--tw-bg-opacity));
 }
 
-.bg-red-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-
-.bg-green-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
-}
-
-.bg-yellow-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
-}
-
-.bg-red-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
 .py-14{
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
@@ -791,12 +777,12 @@ section{
   font-weight: 500;
 }
 
-.font-semibold{
-  font-weight: 600;
-}
-
 .font-normal{
   font-weight: 400;
+}
+
+.font-semibold{
+  font-weight: 600;
 }
 
 .tracking-tighter{
@@ -829,7 +815,7 @@ section{
   line-height: 1.2;
   --tw-text-opacity: 1;
   color: hsl(36 100% 96% / var(--tw-text-opacity));
-  --tw-drop-shadow: drop-shadow( 6px 6px 0px #9f7060);
+  --tw-drop-shadow: drop-shadow(2.2px 2.2px 0 #000) drop-shadow(-2.2px -2.2px 0 #000) drop-shadow( 2.2px -2.2px 0 #000) drop-shadow(-2.2px 2.2px 0 #000) drop-shadow(2.2px 2.2px 0 #000);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -837,6 +823,11 @@ section{
   .heading-title{
     font-size: 80px;
   }
+}
+
+.strokeColor{
+  --tw-drop-shadow: drop-shadow( 6px 6px 0px #9f7060);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .paragraf{
@@ -866,48 +857,22 @@ section{
     display: none;
   }
 
-  .md\:w-48{
-    width: 12rem;
-  }
-
   .md\:w-auto{
     width: auto;
-  }
-
-  .md\:w-\[300px\]{
-    width: 300px;
-  }
-
-  .md\:basis-1\/2{
-    flex-basis: 50%;
-  }
-
-  .md\:basis-3\/5{
-    flex-basis: 60%;
   }
 
   .md\:flex-row{
     flex-direction: row;
   }
 
-  .md\:py-0{
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
-  .md\:px-8{
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .md\:px-10{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
   .md\:px-28{
     padding-left: 7rem;
     padding-right: 7rem;
+  }
+
+  .md\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .md\:text-xl{
@@ -925,20 +890,8 @@ section{
     order: 2;
   }
 
-  .lg\:col-span-6{
-    grid-column: span 6 / span 6;
-  }
-
-  .lg\:w-full{
-    width: 100%;
-  }
-
   .lg\:w-\[600px\]{
     width: 600px;
-  }
-
-  .lg\:basis-2\/5{
-    flex-basis: 40%;
   }
 
   .lg\:basis-3\/5{
