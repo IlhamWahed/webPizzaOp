@@ -84,9 +84,11 @@
       <section id="about">
         <div class="container flex flex-col items-center justify-center text-center lg:flex-row lg:text-start">
           <!--title about-->
-          <div class="space-y-4 lg:basis-3/5 lg:order-2">
-            <p class="title">about us</p>
-            <h2 class="heading-title text-3xl lg:text-[40px]">we offer <br />healthy food</h2>
+          <div class="space-y-5 lg:basis-3/5 lg:order-2">
+            <p class="title pb-6">about us</p>
+            <span class="strokeColor">
+              <h2 class="heading-title lg:text-start text-3xl lg:text-[40px]">we offer <br />healthy food</h2>
+            </span>
             <p class="paragraf">
               we are dedicated to crafting mouth-watering pizzas that are made with only the freshest and highest quality locally-sourced ingredients. We believe that using fresh ingredients not only enhances the taste of our pizzas.
               <br /><br />
@@ -100,6 +102,62 @@
         </div>
       </section>
       <!--About End-->
+
+      <!--popular-->
+      <section id="popular">
+        <div class="container">
+          <!--title popular-->
+          <p class="title">the best food</p>
+          <span class="strokeColor">
+            <h2 class="heading-title text-[32px] lg:text-[48px]">popular pizza</h2>
+          </span>
+          <!--menu popular-->
+          <div class="gap-5 mt-16 flex flex-wrap flex-col md:flex-row items-center justify-center">
+            <div class="bg-containerColor px-8 pt-8 pb-4 rounded-lg cursor-pointer relative lg:w-80 drop-shadow-myShadow md:w-80">
+              <!--image-->
+              <div class="absolute top-0 left-0 p-2 hover:animate-movingY w-full h-full">
+                <img src="../img/popular-pizza-1.png" class="w-[150px]" alt="" />
+              </div>
+              <!--title-->
+              <div class="text-right space-y-2">
+                <span class="py-[5px] px-[10px] rounded-full bg-primaryColorAlt text-xl text-containerColor"><i class="fa-solid fa-shopping-basket pb-[3rem]"></i></span>
+                <h3 class="heading-popular">margherita</h3>
+                <p class="text-titleColor text-sm font-normal">A classic pizza with tomato sauce, fresh mozzarella, and basil.</p>
+                <p class="price-popular">$12.99</p>
+              </div>
+            </div>
+
+            <div class="bg-containerColor px-8 pt-8 pb-4 rounded-lg cursor-pointer relative lg:w-80 drop-shadow-myShadow md:w-80">
+              <!--image-->
+              <div class="absolute top-0 left-0 p-3 hover:animate-movingY w-full h-full">
+                <img src="../img/popular-pizza-2.png" class="w-[150px]" alt="" />
+              </div>
+              <!--title-->
+              <div class="text-right space-y-2">
+                <span class="py-[5px] px-[10px] rounded-full bg-primaryColorAlt text-xl text-containerColor"><i class="fa-solid fa-shopping-basket pb-[3rem]"></i></span>
+                <h3 class="heading-popular">papperoni</h3>
+                <p class="text-titleColor text-sm font-normal">A traditional pizza topped with tomato sauce, mozzarella cheese.</p>
+                <p class="price-popular">$14.99</p>
+              </div>
+            </div>
+
+            <div class="bg-containerColor px-8 pt-8 pb-4 rounded-lg cursor-pointer relative lg:w-80 drop-shadow-myShadow md:w-80">
+              <!--image-->
+              <div class="absolute top-0 left-0 p-3 hover:animate-movingY w-full h-full">
+                <img src="../img/popular-pizza-3.png" class="w-[150px]" alt="" />
+              </div>
+              <!--title-->
+              <div class="text-right space-y-2">
+                <span class="py-[5px] px-[10px] rounded-full bg-primaryColorAlt text-xl text-containerColor"><i class="fa-solid fa-shopping-basket pb-[3rem]"></i></span>
+                <h3 class="heading-popular">meat lovers</h3>
+                <p class="text-titleColor text-sm font-normal">A hearty pizza topped with tomato sauce, mozzarella cheese, pepperoni. .</p>
+                <p class="price-popular">$17.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--popular end-->
     </main>
 
     <!--Link JS-->
