@@ -666,6 +666,10 @@ section{
   margin-right: auto;
 }
 
+.mt-10{
+  margin-top: 2.5rem;
+}
+
 .flex{
   display: flex;
 }
@@ -680,6 +684,10 @@ section{
 
 .h-auto{
   height: auto;
+}
+
+.w-64{
+  width: 16rem;
 }
 
 .w-80{
@@ -736,6 +744,12 @@ section{
   gap: 1.25rem;
 }
 
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
 .overflow-clip{
   overflow: clip;
 }
@@ -761,6 +775,15 @@ section{
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-\[40px\]{
+  font-size: 40px;
 }
 
 .text-base{
@@ -809,7 +832,6 @@ section{
 
 .heading-title{
   font-family: Titan One, cursive;
-  font-size: 40px;
   font-weight: 700;
   text-transform: capitalize;
   line-height: 1.2;
@@ -819,9 +841,19 @@ section{
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.title{
+  font-family: Dancing Script, cursive;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-transform: capitalize;
+  --tw-text-opacity: 1;
+  color: hsl(359 100% 35% / var(--tw-text-opacity));
+}
+
 @media (min-width: 1024px){
-  .heading-title{
-    font-size: 80px;
+  .title{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -837,6 +869,13 @@ section{
   line-height: 1.5rem;
   --tw-text-opacity: 1;
   color: hsl(19 16% 35% / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px){
+  .paragraf{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 .hover\:text-primaryColorAlt:hover{
@@ -890,6 +929,10 @@ section{
     order: 2;
   }
 
+  .lg\:w-\[400px\]{
+    width: 400px;
+  }
+
   .lg\:w-\[600px\]{
     width: 600px;
   }
@@ -913,5 +956,13 @@ section{
 
   .lg\:text-start{
     text-align: start;
+  }
+
+  .lg\:text-\[40px\]{
+    font-size: 40px;
+  }
+
+  .lg\:text-\[80px\]{
+    font-size: 80px;
   }
 }

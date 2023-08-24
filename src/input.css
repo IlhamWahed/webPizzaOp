@@ -27,7 +27,11 @@
 
 @layer utilities {
   .heading-title {
-    @apply font-titleFont text-headingColor capitalize text-[40px] lg:text-[80px] font-bold leading-[1.2] drop-shadow-strokeShadow;
+    @apply font-titleFont text-headingColor capitalize font-bold leading-[1.2] drop-shadow-strokeShadow;
+  }
+
+  .title {
+    @apply font-subtitleFont text-primaryColor text-xl capitalize lg:text-2xl;
   }
 
   .strokeColor {
@@ -35,6 +39,6 @@
   }
 
   .paragraf {
-    @apply px-4 text-textColor text-base;
+    @apply px-4 text-textColor text-base lg:px-0;
   }
 }
