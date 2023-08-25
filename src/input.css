@@ -27,11 +27,11 @@
 
 @layer utilities {
   .heading-title {
-    @apply font-titleFont text-headingColor capitalize font-bold leading-[1.2] drop-shadow-strokeShadow text-center;
+    @apply font-titleFont text-headingColor capitalize font-bold leading-[1.2] drop-shadow-strokeShadow;
   }
 
   .title {
-    @apply font-subtitleFont text-primaryColor text-xl capitalize lg:text-2xl font-semibold text-center pb-4;
+    @apply font-subtitleFont text-primaryColor text-xl capitalize lg:text-2xl font-semibold  pb-4;
   }
 
   .strokeColor {
@@ -39,7 +39,7 @@
   }
 
   .paragraf {
-    @apply px-4 text-textColor text-base lg:px-0;
+    @apply px-4 text-textColor text-sm lg:px-0 lg:text-base;
   }
 
   .heading-popular {
