@@ -48,4 +48,15 @@
   .price-popular {
     @apply font-medium text-primaryColor text-base lg:text-xl;
   }
+  .footer-title {
+    @apply text-xs text-textColor hover:text-primaryColor font-normal lg:text-base capitalize;
+  }
+
+  .footer-heading {
+    @apply mb-2 text-base text-titleColor font-medium capitalize;
+  }
+
+  .logo-sosmed {
+    @apply font-medium  text-primaryColor w-full h-full hover:text-primaryColorAlt;
+  }
 }
