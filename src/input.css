@@ -31,7 +31,7 @@
   }
 
   .title {
-    @apply font-subtitleFont text-primaryColor text-xl capitalize lg:text-2xl font-semibold  pb-4;
+    @apply font-subtitleFont text-primaryColor text-xl capitalize lg:text-2xl font-semibold pb-4;
   }
 
   .strokeColor {

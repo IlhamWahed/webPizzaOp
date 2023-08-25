@@ -12,6 +12,7 @@ module.exports = {
         strokeShadow: ["2.2px 2.2px 0 #000", "-2.2px -2.2px 0 #000", " 2.2px -2.2px 0 #000", "-2.2px 2.2px 0 #000", "2.2px 2.2px 0 #000"],
       },
       screens: {
+        xs: "350px",
         sm: "480px",
         md: "768px",
         lg: "1024px",
