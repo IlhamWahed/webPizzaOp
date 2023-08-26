@@ -102,3 +102,22 @@ function lightMode() {
   localStorage.setItem("mode", "light");
 }
 //------------- Dark Mode  End ---------------//
+
+//------------- Animate Scroll Reveal  ---------------//
+const sr = ScrollReveal({
+  delay: 400,
+  distance: "60px",
+  duration: 2500,
+  origin: "top",
+});
+
+sr.reveal(".img-home");
+sr.reveal(".subs");
+sr.reveal(".footer");
+sr.reveal(".title-home", { origin: "bottom" });
+sr.reveal(".title-about", { origin: "right" });
+sr.reveal(".title-recently", { origin: "left" });
+sr.reveal(".img-about", { origin: "left" });
+sr.reveal(".img-recently", { origin: "right" });
+sr.reveal(".popular", { interval: 400 });
+//------------- Animate Scroll Reveal  End ---------------//
