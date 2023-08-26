@@ -49,11 +49,11 @@
     @apply font-medium text-primaryColor text-base lg:text-xl;
   }
   .footer-title {
-    @apply text-xs text-textColor hover:text-primaryColor font-normal lg:text-base capitalize;
+    @apply text-xs text-textColor hover:text-primaryColor font-normal lg:text-base capitalize dark:text-bodyColor dark:hover:text-primaryColor;
   }
 
   .footer-heading {
-    @apply mb-2 text-base text-titleColor font-medium capitalize;
+    @apply mb-2 text-base text-titleColor font-medium capitalize dark:text-bodyColor;
   }
 
   .logo-sosmed {

@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
+  darkMode: "class",
   theme: {
     extend: {
       strokeWidth: {
@@ -27,6 +28,8 @@ module.exports = {
         containerColor: "hsl(19, 100%, 97%)",
         headingColor: "hsl(36, 100%, 96%)",
         strokeColor: "#401c10",
+        gelap: "hsl(19,10%,5%)",
+        gelapBanget: "hsl(0,7%,8%)",
       },
       keyframes: {
         move: {
@@ -45,7 +48,7 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        lg: "7rem",
+        lg: "15rem",
         sm: "1rem",
       },
     },
