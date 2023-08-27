@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./*.{html,js}"],
   darkMode: "class",
   theme: {
     extend: {
@@ -13,10 +13,10 @@ module.exports = {
         strokeShadow: ["2.2px 2.2px 0 #000", "-2.2px -2.2px 0 #000", " 2.2px -2.2px 0 #000", "-2.2px 2.2px 0 #000", "2.2px 2.2px 0 #000"],
       },
       screens: {
-        xs: "350px",
+        xs: "300px",
         sm: "480px",
         md: "768px",
-        lg: "1024px",
+        lg: "1000px",
       },
       colors: {
         primaryColor: "hsl(359, 100%, 35%)",
@@ -48,7 +48,7 @@ module.exports = {
     container: {
       center: true,
       padding: {
-        lg: "15rem",
+        lg: "2rem",
         sm: "1rem",
       },
     },
