@@ -852,6 +852,30 @@ section{
   border-radius: 0.5rem;
 }
 
+.border-t{
+  border-top-width: 1px;
+}
+
+.border-bodyColor{
+  --tw-border-opacity: 1;
+  border-color: hsl(36 52% 87% / var(--tw-border-opacity));
+}
+
+.border-textColorLight{
+  --tw-border-opacity: 1;
+  border-color: hsl(19 8% 55% / var(--tw-border-opacity));
+}
+
+.border-primaryColorAlt{
+  --tw-border-opacity: 1;
+  border-color: hsl(359 100% 25% / var(--tw-border-opacity));
+}
+
+.border-containerColor{
+  --tw-border-opacity: 1;
+  border-color: hsl(19 100% 97% / var(--tw-border-opacity));
+}
+
 .bg-bodyColor{
   --tw-bg-opacity: 1;
   background-color: hsl(36 52% 87% / var(--tw-bg-opacity));
@@ -867,6 +891,11 @@ section{
   background-color: hsl(359 100% 25% / var(--tw-bg-opacity));
 }
 
+.bg-red-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
 .bg-titleColor{
   --tw-bg-opacity: 1;
   background-color: hsl(19 16% 15% / var(--tw-bg-opacity));
@@ -875,6 +904,21 @@ section{
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-textColorLight{
+  --tw-bg-opacity: 1;
+  background-color: hsl(19 8% 55% / var(--tw-bg-opacity));
+}
+
+.bg-blue-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+
+.bg-red-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .p-2{
@@ -903,6 +947,11 @@ section{
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-14{
@@ -959,6 +1008,10 @@ section{
 
 .pt-8{
   padding-top: 2rem;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .text-center{
@@ -1272,6 +1325,11 @@ section{
   outline-offset: 2px;
 }
 
+:is(.dark .dark\:border-bodyColor){
+  --tw-border-opacity: 1;
+  border-color: hsl(36 52% 87% / var(--tw-border-opacity));
+}
+
 :is(.dark .dark\:bg-gelap){
   --tw-bg-opacity: 1;
   background-color: hsl(19 10% 5% / var(--tw-bg-opacity));
@@ -1493,14 +1551,6 @@ section{
   .lg\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .lg\:pt-24{
-    padding-top: 6rem;
-  }
-
-  .lg\:pt-20{
-    padding-top: 5rem;
   }
 
   .lg\:text-start{
